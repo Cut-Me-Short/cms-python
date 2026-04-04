@@ -4,9 +4,9 @@
 import os
 from cms_python import CMSClient
 
-bearer_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTg3NTZiZGU3NTExNmU3YWMzZjVlNGQiLCJlbWFpbCI6InZpZ25lc2hyZWRkeTc5M0BnbWFpbC5jb20iLCJpYXQiOjE3NzMyMzI5ODUsImV4cCI6MTc4MTAwODk4NX0.22naMhoaQ19TkcB61kmvsXYj1kXEUrnCWoJvt-e55Pc"
+bearer_token = "your_bearer_token"
 
-client = CMSClient(token=bearer_token, host="http://localhost:5000")
+client = CMSClient(token=bearer_token)
 
 # Standard lead
 response = client.track_lead(
