@@ -45,7 +45,7 @@ class TestTrackingApi(unittest.TestCase):
             _host_index=0,
         )
         self.assertEqual(method, "POST")
-        self.assertTrue(url.endswith("/api/sdk/track-lead"))
+        self.assertTrue(url.endswith("/track/lead"))
         self.assertEqual(headers["Authorization"], "Bearer token-123")
         self.assertEqual(headers["Content-Type"], "application/json")
         self.assertIsNotNone(body)
