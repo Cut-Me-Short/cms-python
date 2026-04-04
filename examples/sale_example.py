@@ -9,7 +9,7 @@ bearer_token = os.environ["CMS_BEARER_TOKEN"]
 
 # Create client
 client = CMSClient(token=bearer_token)
-# For custom base URL: client = CMSClient(token=bearer_token, host="https://custom.com")
+# For custom base URL: client = CMSClient(token=bearer_token)
 
     # Track a sale
 response = client.track_sale(
