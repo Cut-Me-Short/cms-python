@@ -1,12 +1,12 @@
 [project]
-name = "cms-python-client"
+name = "cms-python"
 version = "1.0.0"
 description = "CutMeShort CMS API"
 authors = [
-  {name = "OpenAPI Generator Community",email = "team@openapitools.org"},
+  {name = "CutMeShort",email = "support@cutmeshort.com"},
 ]
 readme = "README.md"
-keywords = ["OpenAPI", "OpenAPI-Generator", "CutMeShort CMS API"]
+keywords = ["CutMeShort", "CMS", "Python SDK"]
 requires-python = ">=3.9"
 
 dependencies = [
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/CutMeShort/cms-python-client"
+Repository = "https://github.com/Cut-Me-Short/cms-python"
 
 [tool.poetry]
 requires-poetry = ">=2.0"
