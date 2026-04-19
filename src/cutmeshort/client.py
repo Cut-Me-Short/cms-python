@@ -7,12 +7,12 @@ Simplified CMS Client wrapper for easy lead and sale tracking
 from typing import Optional
 from datetime import datetime
 
-from cms_python.configuration import Configuration
-from cms_python.api_client import ApiClient
-from cms_python.api.tracking_api import TrackingApi
-from cms_python.models.lead_payload import LeadPayload
-from cms_python.models.sale_payload import SalePayload
-from cms_python.exceptions import ApiException
+from cutmeshort.configuration import Configuration
+from cutmeshort.api_client import ApiClient
+from cutmeshort.api.tracking_api import TrackingApi
+from cutmeshort.models.lead_payload import LeadPayload
+from cutmeshort.models.sale_payload import SalePayload
+from cutmeshort.exceptions import ApiException
 
 
 class CMSClient:

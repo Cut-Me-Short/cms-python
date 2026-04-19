@@ -15,7 +15,7 @@
 import unittest
 from pydantic import ValidationError
 
-from cms_python.models.lead_payload import LeadPayload
+from cutmeshort.models.lead_payload import LeadPayload
 
 class TestLeadPayload(unittest.TestCase):
     """LeadPayload validation tests"""

@@ -13,8 +13,8 @@
 """  # noqa: E501
 
 # import models into model package
-from cms_python.models.error_response import ErrorResponse
-from cms_python.models.lead_payload import LeadPayload
-from cms_python.models.sale_payload import SalePayload
-from cms_python.models.track_response import TrackResponse
+from cutmeshort.models.error_response import ErrorResponse
+from cutmeshort.models.lead_payload import LeadPayload
+from cutmeshort.models.sale_payload import SalePayload
+from cutmeshort.models.track_response import TrackResponse
 

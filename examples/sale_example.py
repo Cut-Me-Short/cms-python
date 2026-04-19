@@ -2,7 +2,7 @@
 """Sale tracking example"""
 
 import os
-from cms_python import CMSClient
+from cutmeshort import CMSClient
 
 # Get Bearer token from environment
 bbearer_token = "your_bearer_token_here"

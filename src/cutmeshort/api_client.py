@@ -26,11 +26,11 @@ from urllib.parse import quote
 from typing import Tuple, Optional, List, Dict, Union
 from pydantic import SecretStr
 
-from cms_python.configuration import Configuration
-from cms_python.api_response import ApiResponse, T as ApiResponseT
-import cms_python.models
-from cms_python import rest
-from cms_python.exceptions import (
+from cutmeshort.configuration import Configuration
+from cutmeshort.api_response import ApiResponse, T as ApiResponseT
+import cutmeshort.models
+from cutmeshort import rest
+from cutmeshort.exceptions import (
     ApiValueError,
     ApiException,
     BadRequestException,
@@ -90,7 +90,7 @@ class ApiClient:
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'cms-python-sdk/1.0.0/python'
+        self.user_agent = 'cutmeshort-sdk/1.0.0/python'
         self.client_side_validation = configuration.client_side_validation
 
     def __enter__(self):
@@ -456,7 +456,7 @@ class ApiClient:
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(cms_python.models, klass)
+                klass = getattr(cutmeshort.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

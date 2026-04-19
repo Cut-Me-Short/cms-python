@@ -2,7 +2,7 @@
 """Lead tracking example"""
 
 import os
-from cms_python import CMSClient
+from cutmeshort import CMSClient
 
 bearer_token = "your_bearer_token_here"
 

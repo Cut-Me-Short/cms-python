@@ -14,7 +14,7 @@
 
 import unittest
 
-from cms_python.models.track_response import TrackResponse
+from cutmeshort.models.track_response import TrackResponse
 
 class TestTrackResponse(unittest.TestCase):
     """TrackResponse model tests"""

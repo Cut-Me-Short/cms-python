@@ -36,25 +36,25 @@ __all__ = [
 ]
 
 # import simplified client
-from cms_python.client import CMSClient as CMSClient
+from cutmeshort.client import CMSClient as CMSClient
 
 # import apis into sdk package
-from cms_python.api.tracking_api import TrackingApi as TrackingApi
+from cutmeshort.api.tracking_api import TrackingApi as TrackingApi
 
 # import ApiClient
-from cms_python.api_response import ApiResponse as ApiResponse
-from cms_python.api_client import ApiClient as ApiClient
-from cms_python.configuration import Configuration as Configuration
-from cms_python.exceptions import OpenApiException as OpenApiException
-from cms_python.exceptions import ApiTypeError as ApiTypeError
-from cms_python.exceptions import ApiValueError as ApiValueError
-from cms_python.exceptions import ApiKeyError as ApiKeyError
-from cms_python.exceptions import ApiAttributeError as ApiAttributeError
-from cms_python.exceptions import ApiException as ApiException
+from cutmeshort.api_response import ApiResponse as ApiResponse
+from cutmeshort.api_client import ApiClient as ApiClient
+from cutmeshort.configuration import Configuration as Configuration
+from cutmeshort.exceptions import OpenApiException as OpenApiException
+from cutmeshort.exceptions import ApiTypeError as ApiTypeError
+from cutmeshort.exceptions import ApiValueError as ApiValueError
+from cutmeshort.exceptions import ApiKeyError as ApiKeyError
+from cutmeshort.exceptions import ApiAttributeError as ApiAttributeError
+from cutmeshort.exceptions import ApiException as ApiException
 
 # import models into sdk package
-from cms_python.models.error_response import ErrorResponse as ErrorResponse
-from cms_python.models.lead_payload import LeadPayload as LeadPayload
-from cms_python.models.sale_payload import SalePayload as SalePayload
-from cms_python.models.track_response import TrackResponse as TrackResponse
+from cutmeshort.models.error_response import ErrorResponse as ErrorResponse
+from cutmeshort.models.lead_payload import LeadPayload as LeadPayload
+from cutmeshort.models.sale_payload import SalePayload as SalePayload
+from cutmeshort.models.track_response import TrackResponse as TrackResponse
 

@@ -20,7 +20,7 @@ import warnings
 
 import urllib3
 
-from cms_python.exceptions import ApiException, ApiValueError
+from cutmeshort.exceptions import ApiException, ApiValueError
 
 SUPPORTED_SOCKS_PROXIES = {"socks5", "socks5h", "socks4", "socks4a"}
 RESTResponseType = urllib3.HTTPResponse

@@ -14,10 +14,10 @@
 
 import unittest
 
-from cms_python.api_client import ApiClient
-from cms_python.configuration import Configuration
-from cms_python.api.tracking_api import TrackingApi
-from cms_python.models.lead_payload import LeadPayload
+from cutmeshort.api_client import ApiClient
+from cutmeshort.configuration import Configuration
+from cutmeshort.api.tracking_api import TrackingApi
+from cutmeshort.models.lead_payload import LeadPayload
 
 
 class _DummyRestClient:

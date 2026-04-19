@@ -15,13 +15,13 @@ from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
-from cms_python.models.lead_payload import LeadPayload
-from cms_python.models.sale_payload import SalePayload
-from cms_python.models.track_response import TrackResponse
+from cutmeshort.models.lead_payload import LeadPayload
+from cutmeshort.models.sale_payload import SalePayload
+from cutmeshort.models.track_response import TrackResponse
 
-from cms_python.api_client import ApiClient, RequestSerialized
-from cms_python.api_response import ApiResponse
-from cms_python.rest import RESTResponseType
+from cutmeshort.api_client import ApiClient, RequestSerialized
+from cutmeshort.api_response import ApiResponse
+from cutmeshort.rest import RESTResponseType
 
 
 class TrackingApi:

@@ -14,7 +14,7 @@
 
 import unittest
 
-from cms_python.models.error_response import ErrorResponse
+from cutmeshort.models.error_response import ErrorResponse
 
 class TestErrorResponse(unittest.TestCase):
     """ErrorResponse model tests"""
