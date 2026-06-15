@@ -15,13 +15,7 @@ It provides a clean and simple interface for:
 ### Install from PyPI (recommended)
 
 ```bash
-pip install cms-python-client
-```
-
-### Install from GitHub
-
-```bash
-pip install git+https://github.com/CutMeShort/cms-python-client.git
+pip install cutmeshort
 ```
 
 ---
@@ -46,7 +40,7 @@ export CMS_BEARER_TOKEN="your_jwt_token"
 
 ```python
 import os
-from cms_python import CMSClient
+from cutmeshort import CMSClient
 
 client = CMSClient(token=os.environ["CMS_BEARER_TOKEN"])
 
@@ -85,7 +79,7 @@ User clicks an ad → later signs up → events get linked automatically.
 ## Track a Lead Event (Standard Flow)
 
 ```python
-from cms_python import CMSClient
+from cutmeshort import CMSClient
 
 client = CMSClient(token="your_jwt_token")
 
@@ -129,7 +123,7 @@ response = client.track_lead(
 ## Track a Sale Event
 
 ```python
-from cms_python import CMSClient
+from cutmeshort import CMSClient
 
 client = CMSClient(token="your_jwt_token")
 
@@ -153,7 +147,7 @@ print(response)
 ### Initialization
 
 ```python
-from cms_python import CMSClient
+from cutmeshort import CMSClient
 
 client = CMSClient(token="your_jwt_token")
 

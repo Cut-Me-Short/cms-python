@@ -1,12 +1,12 @@
 [project]
-name = "cms-python-client"
+name = "cutmeshort"
 version = "1.0.0"
 description = "CutMeShort CMS API"
 authors = [
-  {name = "OpenAPI Generator Community",email = "team@openapitools.org"},
+  {name = "CutMeShort",email = "support@cutmeshort.com"},
 ]
 readme = "README.md"
-keywords = ["OpenAPI", "OpenAPI-Generator", "CutMeShort CMS API"]
+keywords = ["CutMeShort", "CMS", "Python SDK"]
 requires-python = ">=3.9"
 
 dependencies = [
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/CutMeShort/cms-python-client"
+Repository = "https://github.com/Cut-Me-Short/cms-python"
 
 [tool.poetry]
 requires-poetry = ">=2.0"
@@ -40,14 +40,14 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["cms_python*"]
+include = ["cutmeshort*"]
 
 [tool.pylint.'MESSAGES CONTROL']
 extension-pkg-whitelist = "pydantic"
 
 [tool.mypy]
 files = [
-  "cms_python",
+  "cutmeshort",
   "src/test",
 ]
 # TODO: enable "strict" once all these individual checks are passing
@@ -84,7 +84,7 @@ disallow_any_generics = true
 
 [[tool.mypy.overrides]]
 module = [
-  "cms_python.configuration",
+  "cutmeshort.configuration",
 ]
 warn_unused_ignores = true
 strict_equality = true

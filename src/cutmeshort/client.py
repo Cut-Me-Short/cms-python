@@ -7,16 +7,16 @@ Simplified CMS Client wrapper for easy lead and sale tracking
 from typing import Optional
 from datetime import datetime
 
-from cms_python.configuration import Configuration
-from cms_python.api_client import ApiClient
-from cms_python.api.tracking_api import TrackingApi
-from cms_python.models.lead_payload import LeadPayload
-from cms_python.models.sale_payload import SalePayload
-from cms_python.exceptions import ApiException
+from cutmeshort.configuration import Configuration
+from cutmeshort.api_client import ApiClient
+from cutmeshort.api.tracking_api import TrackingApi
+from cutmeshort.models.lead_payload import LeadPayload
+from cutmeshort.models.sale_payload import SalePayload
+from cutmeshort.exceptions import ApiException
 
 
 class CMSClient:
-    def __init__(self, token: str, host: str = "https://www.cutmeshort.com"):
+    def __init__(self, token: str, host: str = "https://app.cme.sh"):
         configuration = Configuration(
             access_token=token,
             host=host,
@@ -47,7 +47,7 @@ class CMSClient:
                 "status_code": e.status
             }
 
-    def track_sale(self, click_id: str, event_name: str, customer_external_id: str, invoice_id: str, amount: int, currency: str, **kwargs) -> dict:
+    def track_sale(self, event_name: str, customer_external_id: str, invoice_id: str, amount: int, currency: str, click_id: Optional[str] = None, **kwargs) -> dict:
         try:
             payload = SalePayload(
                 click_id=click_id,
@@ -87,13 +87,13 @@ class CMSClient:
         )
     """
     
-    def __init__(self, token: str, host: str = "https://www.cutmeshort.com"):
+    def __init__(self, token: str, host: str = "https://app.cme.sh"):
         """
         Initialize the CMS client.
         
         Args:
             token: Bearer JWT token for authentication
-            host: Base URL (default: https://www.cutmeshort.com)
+            host: Base URL (default: https://app.cme.sh)
         """
         configuration = Configuration(
             access_token=token,
@@ -148,12 +148,12 @@ class CMSClient:
     
     def track_sale(
         self,
-        click_id: str,
         event_name: str,
         customer_external_id: str,
         invoice_id: str,
         amount: int,
         currency: str,
+        click_id: Optional[str] = None,
         customer_name: Optional[str] = None,
         customer_email: Optional[str] = None,
         customer_avatar: Optional[str] = None,
@@ -163,7 +163,7 @@ class CMSClient:
         Track a sale/purchase event.
         
         Args:
-            click_id: Click ID from the campaign (required)
+            click_id: Click ID from the campaign (optional if attribution is resolved via prior deferred lead)
             event_name: Name of the sale event (required)
             customer_external_id: Your unique customer ID (required)
             invoice_id: Invoice ID (required)

@@ -2,18 +2,17 @@
 """Sale tracking example"""
 
 import os
-from cms_python import CMSClient
+from cutmeshort import CMSClient
 
 # Get Bearer token from environment
-bearer_token = os.environ["CMS_BEARER_TOKEN"]
+bbearer_token = "your_bearer_token_here"
 
 # Create client
 client = CMSClient(token=bearer_token)
-# For custom base URL: client = CMSClient(token=bearer_token)
 
-    # Track a sale
+# Track a sale
 response = client.track_sale(
-    click_id="id_123",
+    click_id="click_id",
     event_name="purchase_completed",
     customer_external_id="user_42",
     invoice_id="inv_987",
