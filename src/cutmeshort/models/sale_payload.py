@@ -28,7 +28,7 @@ class SalePayload(BaseModel):
     """
     SalePayload
     """ # noqa: E501
-    click_id: StrictStr = Field(alias="clickId")
+    click_id: Optional[StrictStr] = Field(default=None, description="Click ID from the campaign. May be omitted if attribution is resolved via a prior deferred lead association for the given customerExternalId.", alias="clickId")
     event_name: StrictStr = Field(alias="eventName")
     timestamp: Optional[datetime] = Field(default=None, description="ISO 8601 timestamp.")
     customer_external_id: StrictStr = Field(alias="customerExternalId")
