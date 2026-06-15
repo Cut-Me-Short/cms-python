@@ -16,7 +16,7 @@ from cutmeshort.exceptions import ApiException
 
 
 class CMSClient:
-    def __init__(self, token: str, host: str = "https://www.cutmeshort.com"):
+    def __init__(self, token: str, host: str = "https://app.cme.sh"):
         configuration = Configuration(
             access_token=token,
             host=host,
@@ -87,13 +87,13 @@ class CMSClient:
         )
     """
     
-    def __init__(self, token: str, host: str = "https://www.cutmeshort.com"):
+    def __init__(self, token: str, host: str = "https://app.cme.sh"):
         """
         Initialize the CMS client.
         
         Args:
             token: Bearer JWT token for authentication
-            host: Base URL (default: https://www.cutmeshort.com)
+            host: Base URL (default: https://app.cme.sh)
         """
         configuration = Configuration(
             access_token=token,
