@@ -16,7 +16,7 @@ from cutmeshort.exceptions import ApiException
 
 
 class CMSClient:
-    def __init__(self, token: str, host: str = "https://api.cme.sh"):
+    def __init__(self, token: str, host: str = "https://app.cutmeshort.com"):
         configuration = Configuration(
             access_token=token,
             host=host,
