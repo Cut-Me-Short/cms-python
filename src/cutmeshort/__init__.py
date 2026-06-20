@@ -8,13 +8,13 @@
     Official API for the CutMeShort CMS platform.  This API allows tracking of leads and sales, including deferred lead attribution. In deferred attribution, the first lead call stores the clickId-to-customerExternalId association using `mode: deferred`. Subsequent lead events should be sent as normal events without `mode`, and the backend resolves the stored association automatically. 
 
     CutMeShort Python SDK
-    Version: 1.0.0
+    Version: 1.0.1
 
     Do not edit the class manually.
 """  # noqa: E501
 
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 # Define package exports
 __all__ = [
